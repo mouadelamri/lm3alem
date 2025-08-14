@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import './i18n/i18n';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import MaalemHeader from './components/MaalemHeader';
+import MaalemHero from './components/MaalemHero';
+import MaalemServices from './components/MaalemServices';
+import MaalemHowItWorks from './components/MaalemHowItWorks';
+import MaalemFeatured from './components/MaalemFeatured';
+import MaalemWhyChoose from './components/MaalemWhyChoose';
+import MaalemFooter from './components/MaalemFooter';
 
 function App() {
   const { i18n } = useTranslation();
@@ -35,12 +36,13 @@ function App() {
 
   return (
     <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Contact />
-      <Footer />
+      <MaalemHeader />
+      <MaalemHero />
+      <MaalemServices />
+      <MaalemHowItWorks />
+      <MaalemFeatured />
+      <MaalemWhyChoose />
+      <MaalemFooter />
     </div>
   );
 }
